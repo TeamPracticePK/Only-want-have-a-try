@@ -35,9 +35,15 @@ static NSString * cellId = @"hahh";
     
     
     NSLog(@"这是一个按钮,点击有惊喜哟");
+
+    NSLog(@"好艰难, 还没冲突呢, 连拉取都拉取不了, 权限问题已解决");
+    
+
     NSLog(@"内存加载图片");
 
-    
+
+    NSLog(@"你不来一次冲突多可惜");
+
 }
 
 
@@ -52,6 +58,9 @@ static NSString * cellId = @"hahh";
     UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellId forIndexPath:indexPath];
     cell.backgroundColor = [UIColor brownColor];
     return  cell;
+
+
+
     
 }
 
