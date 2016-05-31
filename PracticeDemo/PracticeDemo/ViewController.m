@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+static NSString * cellId = @"hahh";
 
 @interface ViewController ()
 
@@ -35,6 +36,22 @@
     
     NSLog(@"这是一个按钮,点击有惊喜哟");
     NSLog(@"内存加载图片");
+
+    
+}
+
+
+#pragma mark - 数据源方法
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    
+    return  100;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellId forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor brownColor];
+    return  cell;
     
 }
 
