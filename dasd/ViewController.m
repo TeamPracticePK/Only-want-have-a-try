@@ -19,6 +19,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     NSLog(@"先试试");
     NSLog(@"建一个分支");
+    NSLog(@"再建一个分支");
+    NSLog(@"afas");
 }
 
 - (void)didReceiveMemoryWarning {
